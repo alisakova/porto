@@ -1,0 +1,24 @@
+.first-slide {
+  padding: rem(181 20 227);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &_manufactura {
+    background: url('../img/manufactura/first-slide-bg.png') no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.first-slide__title {
+  margin-bottom: rem(50);
+}
+
+.first-slide__btn-container {
+  .button {
+    &:first-child {
+      margin-right: rem(30);
+    }
+  }
+}

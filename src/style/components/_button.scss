@@ -1,0 +1,36 @@
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  padding: rem(16 0);
+  text-align: center;
+  border: 3px solid transparent;
+  transition: all 250ms;
+  min-width: rem(224);
+  max-width: rem(224);
+  font-weight: 700;
+  &_gold-bg {
+    background: $gold;
+    &:hover, &:focus {
+      background: transparent;
+      border-color: $gold;
+    }
+  }
+  &_bordered {
+    background: transparent;
+    border: 3px solid $gold;
+    &:hover, &:focus {
+      background: $gold;
+    }
+  }
+  &_black-bg {
+    display: block;
+    background: $black;
+    color: $gold;
+    margin: 0 auto rem(80);
+    &:hover, &:focus {
+      background: transparent;
+      border-color: $black;
+      color: $black;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__link {
+  display: block;
+  font-size: rem(16);
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+  &:not(:last-child) {
+    margin-right: rem(35);
+  }
+  &:hover, &:focus {
+    border-color: $gold;
+  }
+}

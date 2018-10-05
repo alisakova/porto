@@ -1,0 +1,161 @@
+@import "variables";
+@import "util";
+
+@font-face {
+  font-family: "KelsonSansBold";
+  src: url("../fonts/KelsonSansBold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+  font: 400 #{16px}/#{1.3} $main-font;
+}
+
+body,
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: block;
+  // min-width: 375px;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  background: none;
+  color: $black;
+  -webkit-text-size-adjust: none;
+  // background: $main-gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  font: {
+    family: $main-font;
+    size: rem(14);
+  }
+}
+
+.container {
+  max-width: rem(1210);
+  padding: 0 rem(20);
+  margin: 0 auto;
+  &_small {
+    max-width: rem(749);
+  }
+}
+
+h1 {
+  font: {
+    size: rem(48);
+    family: $head-font;
+    weight: 700;
+  }
+  color: #fff;
+  line-height: 1.25;
+  margin: 0;
+  letter-spacing: 0.9px;
+  text: {
+    transform: uppercase;
+    align: center;
+  }
+}
+
+h2 {
+  font: {
+    size: rem(36);
+    family: $head-font;
+    weight: 400;
+  }
+  line-height: 2;
+  letter-spacing: 0.9px;
+  margin: 0 0 rem(59) 0;
+  text: {
+    transform: uppercase;
+    align: center;
+  }
+}
+
+p {
+  line-height: 1.875;
+  text-align: left;
+  margin: 0;
+  font-size: rem(16);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// @media (min-width: 1600px) {
+//   html {
+//     font-size: 18px;
+//   }
+// }
+
+@media (max-width: 1080px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+// @media (max-width: 1080px) {
+//   html {
+//     font-size: 12px;
+//   }
+// }
+
+// @media (min-width: 1600px) {
+// 	html {
+// 		font-size: 20px;
+// 	}
+// }
+//
+// @media (min-width: 2000px) {
+// 	html {
+// 		font-size: 24px;
+// 	}
+// }
+
+@import "components/header";
+@import "components/nav";
+@import "components/first-slide";
+@import "components/button";
+@import "components/landing-nav";
+@import "components/coffee";
