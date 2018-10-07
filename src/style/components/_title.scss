@@ -1,0 +1,17 @@
+.title {
+  position: relative;
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    height: 3px;
+    width: rem(320);
+    background: $black;
+  }
+  &:after {
+    right: 0;
+  }
+  &:before {
+    left: 0;
+  }
+}

@@ -74,6 +74,11 @@ button {
   }
 }
 
+.info-container {
+  background: url('../img/manufactura/info-bg.png') no-repeat center center;
+  background-size: cover;
+}
+
 h1 {
   font: {
     size: rem(48);
@@ -96,7 +101,7 @@ h2 {
     family: $head-font;
     weight: 400;
   }
-  line-height: 2;
+  line-height: 1.3;
   letter-spacing: 0.9px;
   margin: 0 0 rem(59) 0;
   text: {
@@ -105,11 +110,25 @@ h2 {
   }
 }
 
+h3 {
+  font: {
+    size: rem(25);
+    family: $head-font;
+    weight: 400;
+  }
+  margin: 0 0 rem(30) 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 p {
   line-height: 1.875;
   text-align: left;
   margin: 0;
   font-size: rem(16);
+  &:not(:last-child) {
+    margin-bottom: rem(20);
+  }
 }
 
 img {
@@ -159,3 +178,8 @@ img {
 @import "components/button";
 @import "components/landing-nav";
 @import "components/coffee";
+@import "components/info";
+@import "components/reviews";
+@import "components/title";
+@import "components/news";
+@import "components/slick";

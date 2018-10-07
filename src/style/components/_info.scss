@@ -1,0 +1,34 @@
+.info {
+  display: flex;
+  align-items: stretch;
+  &_reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.info__descr {
+  background: #fff;
+  padding: rem(53 30 64 36);
+  max-width: rem(585);
+  &_margin-bottom {
+    margin-bottom: rem(78);
+  }
+  &_margin-top {
+    margin-top: rem(78);
+  }
+}
+
+.info__title {
+  text-align: left;
+  position: relative;
+  margin-bottom: rem(36);
+  &:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: rem(57);
+    background: $gold;
+    bottom: 0;
+    left: 0;
+  }
+}

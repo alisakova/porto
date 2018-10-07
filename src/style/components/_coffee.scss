@@ -1,10 +1,24 @@
 .coffee {
   background: url('../img/manufactura/coffee-bg.png') no-repeat center center;
-  padding-bottom: rem(100);
+  background-size: cover;
+  padding: rem(80) 0;
+  position: relative;
 }
 
 .coffee__title {
-  padding-top: rem(80);
+}
+
+.coffee__img {
+  position: absolute;
+  &_left {
+    left: rem(-70);
+    bottom: 0;
+  }
+  &_right {
+    top: 0;
+    right: 0;
+
+  }
 }
 
 .coffee__list {
@@ -38,12 +52,3 @@
 .coffee__price {
   font-weight: 700;
 }
-
-// Кофе в зернах Deorsola Premium         Италия         1 кг      800 р
-// Кофе в зернах Matic Extra              Франция        1 кг      500 р
-// Кофе в зернах Caffé Veloce Lusso       Испания        1 кг      400 р
-// Кофе в зернах Caffé Veloce Crema       Италия         1 кг      800 р
-// Кофе в зернах Deorsola Premium         Италия         1 кг      800 р
-// Кофе в зернах Matic Extra              Франция        1 кг      500 р
-// Кофе в зернах Caffé Veloce Lusso       Испания        1 кг      400 р
-// Кофе в зернах Caffé Veloce Crema       Италия         1 кг      800 р

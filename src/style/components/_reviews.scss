@@ -1,0 +1,47 @@
+.reviews {
+  background: #fff;
+  padding: rem(96) 0;
+}
+
+.reviews__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.reviews__photo {
+  max-width: rem(300);
+  min-width: rem(300);
+  max-height: rem(320);
+  margin-right: rem(47);
+  img {
+    object-fit: cover;
+  }
+}
+
+.reviews__author-name {
+  font: {
+    size: rem(20);
+    weight: 700;
+  }
+  margin-right: rem(23);
+}
+
+.reviews__author-link {
+  color: $orange;
+  border-bottom: 1px solid $orange;
+  font: {
+    family: $main-font;
+    size: rem(16);
+    weight: 400;
+  }
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.reviews__paragraph {
+  &:nth-last-child(1) {
+    margin-bottom: rem(33);
+  }
+}

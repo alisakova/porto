@@ -26,11 +26,19 @@
     display: block;
     background: $black;
     color: $gold;
-    margin: 0 auto rem(80);
+    margin: 0 auto;
     &:hover, &:focus {
       background: transparent;
       border-color: $black;
       color: $black;
+    }
+  }
+  &_white-bg {
+    background: #fff;
+    color: $black;
+    &:hover, &:focus {
+      background: transparent;
+      border-color: #fff;
     }
   }
 }
