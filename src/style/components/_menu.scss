@@ -1,0 +1,65 @@
+.menu {
+  background: #fff;
+  padding: rem(77) 0;
+}
+
+.menu__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu__block {
+  max-width: 48.7%;
+  min-width: 48.7%;
+}
+
+.menu__name {
+  background: $black;
+  padding: rem(28 27 26 25);
+  font: {
+    size: rem(25);
+    weight: 700;
+    family: $head-font;
+  }
+  color: #fff;
+  letter-spacing: 0.63px;
+  text-transform: uppercase;
+}
+
+.menu__img {
+  position: relative;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.menu__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(75);
+  height: rem(75);
+  border-radius: 50%;
+  background-color: $black;
+  transition: background-color 250ms;
+  &:hover {
+    background-color: $gold;
+  }
+  &:after {
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: rem(32);
+    height: rem(32);
+    background: url('../img/zoom-icon.png') no-repeat center center;
+  }
+}
+
+.menu__slide {
+  border-bottom: 3px solid $black;
+}

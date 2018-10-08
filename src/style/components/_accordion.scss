@@ -1,0 +1,42 @@
+.accordion {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  font-size: rem(16);
+  color: $black;
+  padding-right: rem(50);
+  padding: rem(24 58 25 30);
+  border: 3px solid $black;
+  &:before {
+    content: '';
+    background: url('../img/arrow-up.png') no-repeat center center;
+    background-size: contain;
+    width: rem(20);
+    height: rem(10);
+    position: absolute;
+    right: rem(32);
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: 50% center;
+    // transition: transform 250ms;
+  }
+  &.active {
+    &:before {
+      transform: translateY(-50%) scale(-1);
+    }
+    & + .panel {
+      border: 3px solid $black;
+      border-top: none;
+    }
+  }
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion__content {
+  padding: rem(37 38 37 29);
+}

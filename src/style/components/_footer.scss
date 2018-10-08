@@ -1,0 +1,32 @@
+.footer {
+  background: $black;
+  color: $gray;
+  padding: rem(37) 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__col {
+  flex: 0 1 33.333%;
+  &_text-center {
+    text-align: center;
+  }
+  &_text-right {
+    text-align: right;
+  }
+}
+
+.footer__link {
+  border-bottom: 1px solid $gray;
+  &_gold {
+    color: $gold;
+    border-bottom-color: $gold;
+  }
+  &:hover, &:focus {
+    border-bottom-color: transparent;
+  }
+}

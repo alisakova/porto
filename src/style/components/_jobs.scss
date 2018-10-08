@@ -1,0 +1,75 @@
+.jobs {
+  padding: rem(60) 0 rem(94);
+}
+
+.jobs__title {
+  margin-bottom: rem(20);
+}
+
+.jobs__subtitle {
+  font: {
+    size: rem(18);
+    weight: 700;
+  }
+  text-align: center;
+  margin-bottom: rem(60);
+}
+
+.jobs__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style-type: disc;
+  margin-bottom: rem(40);
+}
+
+.jobs__advantage {
+  margin: {
+    bottom: rem(20);
+  }
+  flex: 0 1 50%;
+}
+
+.jobs__descr {
+  &:not(:last-child) {
+    margin-bottom: rem(33);
+  }
+}
+
+.jobs__button {
+  margin: 0;
+  max-width: none;
+  min-width: 0;
+  padding: rem(12 15);
+  font-size: rem(14);
+  letter-spacing: 0.35px;
+}
+
+.jobs__name {
+  font: {
+    size: rem(18);
+    weight: 700;
+  }
+  line-height: 1;
+  text-transform: uppercase;
+  flex: 0 1 55%;
+}
+
+.jobs__accordion-title {
+  display: flex;
+  align-items: center;
+}
+
+.jobs__offer {
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+}
+
+.jobs__info {
+  flex: 0 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: rem(50);
+}

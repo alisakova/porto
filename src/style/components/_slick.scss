@@ -43,4 +43,34 @@
   bottom: rem(-82);
   position: absolute;
   cursor: pointer;
+  z-index: 10;
+}
+
+.menu__slider {
+  .slick-arrow {
+    top: rem(32);
+    bottom: auto;
+    width: rem(12);
+    height: rem(19);
+  }
+  .slick-prev {
+    right: rem(67);
+    left: auto;
+    &:before {
+      background: url('../img/white-left-arrow.png') no-repeat;
+    }
+    &:after {
+      background: #fff;
+      opacity: 0.1;
+      z-index: 10;
+      width: 2px;
+      right: rem(-16);
+    }
+  }
+  .slick-next {
+    right: rem(27);
+    &:before {
+      background: url('../img/white-right-arrow.png') no-repeat;
+    }
+  }
 }

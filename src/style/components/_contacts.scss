@@ -1,0 +1,58 @@
+.contacts {
+  background: url('../img/manufactura/coffee-bg.png') no-repeat center center;
+  background-size: cover;
+}
+
+.contacts__container {
+  position: relative;
+}
+
+.contacts__info {
+  padding: rem(66 32 68 0);
+  max-width: rem(602);
+  width: 100%;
+}
+
+.contacts__map {
+  width: rem(817);
+  height: 100%;
+  background: gray;
+  position: absolute;
+  top: 0;
+  right: rem(-246);
+}
+
+.contacts__actions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: rem(49);
+}
+
+.contacts__button {
+  flex: 0 1 48.77%;
+  font-size: rem(18);
+  margin: {
+    bottom: rem(14);
+  }
+}
+
+.contacts__block {
+  &:not(:last-child) {
+    margin-bottom: rem(35);
+  }
+}
+
+.contacts__subtitle {
+  margin-bottom: rem(15);
+}
+
+.contacts__text {
+  font: {
+    size: rem(18);
+    weight: 700;
+  }
+  &_line-height {
+    line-height: 1.8;
+  }
+}

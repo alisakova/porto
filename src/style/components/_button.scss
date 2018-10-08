@@ -22,6 +22,15 @@
       background: $gold;
     }
   }
+  &_black-border {
+    background: transparent;
+    border: 3px solid $black;
+    color: $black;
+    &:hover, &:focus {
+      color: $gold;
+      background: $black;
+    }
+  }
   &_black-bg {
     display: block;
     background: $black;
@@ -40,5 +49,10 @@
       background: transparent;
       border-color: #fff;
     }
+  }
+  &_big {
+    max-width: none;
+    min-width: 0;
+    padding: rem(27 57);
   }
 }
