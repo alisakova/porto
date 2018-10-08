@@ -1,8 +1,11 @@
 .first-slide {
   padding: rem(181 0 227);
+  position: relative;
+  background: transparent;
+  min-height: 700px;
   &_manufactura {
-    background: url('../img/manufactura/first-slide-bg.png') no-repeat center center;
-    background-size: cover;
+    // background: url('../img/manufactura/first-slide-bg.png') no-repeat center center;
+    // background-size: cover;
   }
 }
 

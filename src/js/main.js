@@ -20,6 +20,4 @@ for (var i = 0; i < accordion.length; i++) {
   });
 }
 
-// $(document).ready(function() {
-//   $("a#single_image").fancybox();
-// });
+$('.parallax-window').parallax({imageSrc: 'img/manufactura/first-slide-bg.png'});

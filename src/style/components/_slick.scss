@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .slick-prev {
@@ -12,7 +12,7 @@
   position: relative;
   &:before {
     content: '';
-    background: url('../img/manufactura/left-arrow.png') no-repeat;
+    background: url('../img/left-arrow.svg') no-repeat center center;
     @extend %icons-slick;
   }
   &:after {
@@ -32,7 +32,7 @@
   right: 47%;
   &:before {
     content: '';
-    background: url('../img/manufactura/right-arrow.png') no-repeat;
+    background: url('../img/right-arrow.svg') no-repeat center center;
     @extend %icons-slick;
   }
 }
@@ -57,7 +57,8 @@
     right: rem(67);
     left: auto;
     &:before {
-      background: url('../img/white-left-arrow.png') no-repeat;
+      background: url('../img/white-left-arrow.svg') no-repeat center center;
+      background-size: cover;
     }
     &:after {
       background: #fff;
@@ -70,7 +71,8 @@
   .slick-next {
     right: rem(27);
     &:before {
-      background: url('../img/white-right-arrow.png') no-repeat;
+      background: url('../img/white-right-arrow.svg') no-repeat center center;
+      background-size: cover;
     }
   }
 }
