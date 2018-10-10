@@ -1,8 +1,8 @@
 .first-slide {
-  padding: rem(181 0 227);
+  padding: rem(187 0 227);
   position: relative;
   background: transparent;
-  min-height: 700px;
+  min-height: rem(571);
   &_manufactura {
     // background: url('../img/manufactura/first-slide-bg.png') no-repeat center center;
     // background-size: cover;
@@ -18,13 +18,13 @@
 }
 
 .first-slide__title {
-  margin-bottom: rem(50);
+  margin-bottom: rem(43);
 }
 
 .first-slide__btn-container {
   .button {
     &:first-child {
-      margin-right: rem(30);
+      margin-right: rem(23);
     }
   }
 }

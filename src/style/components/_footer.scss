@@ -1,13 +1,16 @@
 .footer {
   background: $black;
   color: $gray;
-  padding: rem(37) 0;
+  padding: rem(34 0 35);
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .footer__col {
@@ -18,10 +21,16 @@
   &_text-right {
     text-align: right;
   }
+  @media (max-width: 600px) {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
 }
 
 .footer__link {
   border-bottom: 1px solid $gray;
+  white-space: nowrap;
   &_gold {
     color: $gold;
     border-bottom-color: $gold;

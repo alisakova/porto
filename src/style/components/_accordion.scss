@@ -5,7 +5,7 @@
   font-size: rem(16);
   color: $black;
   padding-right: rem(50);
-  padding: rem(24 58 25 30);
+  padding: rem(19 54 20 28);
   border: 3px solid $black;
   &:before {
     content: '';
@@ -14,11 +14,14 @@
     width: rem(20);
     height: rem(10);
     position: absolute;
-    right: rem(32);
+    right: rem(28);
     top: 50%;
     transform: translateY(-50%);
     transform-origin: 50% center;
     // transition: transform 250ms;
+    @media (max-width: 540px) {
+      right: 5px;
+    }
   }
   &.active {
     &:before {
@@ -29,6 +32,9 @@
       border-top: none;
     }
   }
+  @media (max-width: 540px) {
+    padding: rem(20);
+  }
 }
 
 .panel {
@@ -38,5 +44,5 @@
 }
 
 .accordion__content {
-  padding: rem(37 38 37 29);
+  padding: rem(26 38 34 26);
 }

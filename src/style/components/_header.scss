@@ -1,5 +1,5 @@
 .header {
-  padding: rem(40) 0;
+  padding: rem(42 0 31);
 }
 
 .header__container {
@@ -10,4 +10,7 @@
 
 .header__logo-container {
   max-width: rem(450);
+  @media (max-width: 1280px) {
+    max-width: rem(350);
+  }
 }

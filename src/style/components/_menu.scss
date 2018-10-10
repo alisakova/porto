@@ -1,17 +1,32 @@
 .menu {
   background: #fff;
-  padding: rem(77) 0;
+  padding: rem(74) 0 rem(99);
+  @media (max-width: 540px) {
+    padding: rem(54 0 79);
+  }
 }
 
 .menu__container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  @media (max-width: 540px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .menu__block {
   max-width: 48.7%;
   min-width: 48.7%;
+  @media (max-width: 540px) {
+    max-width: none;
+    min-width: 0;
+    width: 100%;
+    &:first-child {
+      margin-bottom: rem(20);
+    }
+  }
 }
 
 .menu__name {
@@ -57,6 +72,7 @@
     width: rem(32);
     height: rem(32);
     background: url('../img/zoom-icon.png') no-repeat center center;
+    background-size: cover;
   }
 }
 

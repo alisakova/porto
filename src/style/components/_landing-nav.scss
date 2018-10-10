@@ -2,9 +2,24 @@
   background: rgba(23, 23, 23, 0.3);
   padding: 3px;
   position: absolute;
-  top: 100%;
-  bottom: rem(26);
-  left: 100%;
+  top: calc(100% + 24px);
+  left: calc(100% - 22px);
+  min-height: rem(180);
+  @media (max-width: 1400px) {
+    left: auto;
+    right: rem(20);
+  }
+  @media (max-width: 1080px) {
+    top: 100%;
+  }
+  @media (max-width: 768px) {
+    top: calc(100% + 15px);
+    right: 5px;
+  }
+  // @media (max-width: 540px) {
+  //   top: calc(100% + 15px);
+  //   right: 5px;
+  // }
 }
 
 .landing-nav__block {
@@ -16,6 +31,9 @@
   }
   &:not(:last-child) {
     margin-bottom: 3px;
+    // @media (max-width: 540px) {
+    //   margin-bottom: 0;
+    // }
   }
 }
 
@@ -23,12 +41,17 @@
   display: block;
   color: $black;
   text-transform: uppercase;
-  padding: rem(15 10);
+  padding: rem(11 8);
   font: {
     size: 11px;
     weight: 400;
   }
+  line-height: 1.4;
   letter-spacing: 0.28px;
+  @media (max-width: 768px) {
+    font-size: 9px;
+    padding: rem(8 4);
+  }
   &_active {
     color: #fff;
   }

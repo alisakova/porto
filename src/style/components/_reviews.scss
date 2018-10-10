@@ -1,21 +1,37 @@
 .reviews {
   background: #fff;
-  padding: rem(96) 0;
+  padding: rem(87) 0 rem(92);
+  @media (max-width: 540px) {
+    padding: rem(54 0 79);
+  }
+}
+
+.reviews__title {
+  margin-bottom: rem(39);
 }
 
 .reviews__container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  @media (max-width: 540px) {
+    flex-wrap: wrap;
+  }
 }
 
 .reviews__photo {
   max-width: rem(300);
   min-width: rem(300);
   max-height: rem(320);
-  margin-right: rem(47);
+  margin-right: rem(43);
   img {
     object-fit: cover;
+  }
+  @media (max-width: 540px) {
+    margin: {
+      right: 0;
+      bottom: rem(20);
+    }
   }
 }
 
@@ -24,7 +40,7 @@
     size: rem(20);
     weight: 700;
   }
-  margin-right: rem(23);
+  margin-right: rem(15);
 }
 
 .reviews__author-link {
@@ -41,7 +57,7 @@
 }
 
 .reviews__paragraph {
-  &:nth-last-child(1) {
-    margin-bottom: rem(33);
+  &:nth-last-child(2) {
+    margin-bottom: rem(22);
   }
 }

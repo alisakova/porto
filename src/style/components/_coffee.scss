@@ -1,7 +1,7 @@
 .coffee {
   background: url('../img/manufactura/coffee-bg.png') no-repeat center center;
   background-size: cover;
-  padding: rem(80) 0;
+  padding: rem(78) 0 rem(108);
   position: relative;
 }
 
@@ -17,7 +17,6 @@
   &_right {
     top: 0;
     right: 0;
-
   }
 }
 
@@ -30,9 +29,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: rem(28);
+  padding: rem(23 23 18);
   &:not(:last-child) {
-    border-bottom: 1px solid $black;
+    border-bottom: 3px solid $black;
   }
 }
 

@@ -1,9 +1,12 @@
 .jobs {
-  padding: rem(60) 0 rem(94);
+  padding: rem(77) 0 rem(94);
+  @media (max-width: 540px) {
+    padding: rem(54 0 79);
+  }
 }
 
 .jobs__title {
-  margin-bottom: rem(20);
+  margin-bottom: rem(10);
 }
 
 .jobs__subtitle {
@@ -12,7 +15,7 @@
     weight: 700;
   }
   text-align: center;
-  margin-bottom: rem(60);
+  margin-bottom: rem(55);
 }
 
 .jobs__list {
@@ -20,19 +23,27 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   list-style-type: disc;
-  margin-bottom: rem(40);
+  margin-bottom: rem(45);
+  padding-left: rem(18);
 }
 
 .jobs__advantage {
-  margin: {
-    bottom: rem(20);
-  }
+  margin-bottom: rem(18);
   flex: 0 1 50%;
+  padding-left: rem(10);
+  @media (max-width: 768px) {
+    margin-right: rem(30);
+    flex-basis: 45%;
+  }
+  @media (max-width: 540px) {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
 }
 
 .jobs__descr {
   &:not(:last-child) {
-    margin-bottom: rem(33);
+    margin-bottom: rem(28);
   }
 }
 
@@ -52,12 +63,25 @@
   }
   line-height: 1;
   text-transform: uppercase;
-  flex: 0 1 55%;
+  flex: 0 1 56%;
+  @media (max-width: 880px) {
+    flex-basis: 50%;
+  }
+  @media (max-width: 700px) {
+    flex-basis: 40%;
+  }
+  @media (max-width: 540px) {
+    flex-basis: 33.333%;
+    font-size: 1rem;
+  }
 }
 
 .jobs__accordion-title {
   display: flex;
   align-items: center;
+  @media (max-width: 540px) {
+    justify-content: space-between;
+  }
 }
 
 .jobs__offer {
@@ -67,9 +91,29 @@
 }
 
 .jobs__info {
-  flex: 0 1 45%;
+  flex: 0 1 44%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: rem(50);
+  margin-right: rem(38);
+  @media (max-width: 880px) {
+    flex-basis: 50%;
+  }
+  @media (max-width: 880px) {
+    flex-basis: 60%;
+  }
+  @media (max-width: 540px) {
+    flex-basis: auto;
+    margin-right: rem(20);
+  }
+}
+
+.jobs__address {
+  @media (max-width: 540px) {
+    margin-right: rem(20);
+  }
+}
+
+.jobs__salary {
+  white-space: nowrap;
 }
