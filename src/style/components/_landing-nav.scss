@@ -20,6 +20,15 @@
   //   top: calc(100% + 15px);
   //   right: 5px;
   // }
+  &_porto {
+    top: calc(100% - 55px);
+    @media (max-width: 900px) {
+      top: calc(100% - 70px);
+    }
+    @media (max-width: 540px) {
+      top: calc(100% + 10px);
+    }
+  }
 }
 
 .landing-nav__block {

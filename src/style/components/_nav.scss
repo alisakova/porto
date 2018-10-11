@@ -1,3 +1,5 @@
+$nav-link-colors: ();
+
 .nav {
   display: flex;
   justify-content: flex-start;
@@ -37,14 +39,22 @@
     height: 3px;
     background: transparent;
   }
-  &:hover, &:focus {
-    &:hover {
-      &:after {
-        background: $gold;
-      }
-    }
-  }
   @media (max-width: 820px) {
     font-size: rem(14);
+  }
+}
+
+$nav-link-colors: (
+  gold: $gold,
+  green: $green
+);
+
+@each $name, $color in $nav-link-colors {
+  .nav__link_#{$name}-border {
+    &:hover {
+      &:after {
+        background: $color;
+      }
+    }
   }
 }

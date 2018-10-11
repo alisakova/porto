@@ -1,0 +1,49 @@
+.statistics {
+  padding: rem(118 100 50 144);
+  &_text-align-right {
+    text-align: right;
+    padding: rem(65 135 110 160);
+  }
+  &_margin-top {
+    margin-top: rem(100);
+  }
+  &_margin-bottom {
+    margin-bottom: rem(110);
+  }
+}
+
+.statistics__amount {
+  font: {
+    size: rem(48);
+    weight: 700;
+    family: $head-font;
+  }
+  height: 3rem;
+  position: relative;
+  margin-bottom: rem(20);
+  &:after {
+    content: '';
+    position: absolute;
+    width: rem(57);
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $black;
+  }
+  &_line-right {
+    &:after {
+      right: calc(100% + 23px);
+    }
+  }
+  &_line-left {
+    &:after {
+      left: calc(100% + 23px);
+    }
+  }
+}
+
+.statistics__text {
+  font: {
+    size: rem(24);
+  }
+}

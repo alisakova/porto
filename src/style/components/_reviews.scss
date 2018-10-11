@@ -4,10 +4,16 @@
   @media (max-width: 540px) {
     padding: rem(54 0 79);
   }
+  &_porto {
+    padding: rem(75 0 87);
+  }
 }
 
 .reviews__title {
   margin-bottom: rem(39);
+  &_porto {
+    margin-bottom: rem(55);
+  }
 }
 
 .reviews__container {
@@ -53,6 +59,10 @@
   }
   &:hover {
     border-color: transparent;
+  }
+  &_green {
+    color: $green;
+    border-bottom-color: $green;
   }
 }
 

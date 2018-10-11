@@ -1,3 +1,5 @@
+$button-colors: ();
+
 .button {
   text-transform: uppercase;
   color: #fff;
@@ -9,52 +11,56 @@
   max-width: rem(224);
   letter-spacing: 0.35px;
   font-weight: 700;
-  &_gold-bg {
-    background: $gold;
-    &:hover, &:focus {
-      background: transparent;
-      border-color: $gold;
-    }
-  }
-  &_bordered {
-    background: transparent;
-    border: 3px solid $gold;
-    &:hover, &:focus {
-      background: $gold;
-    }
-  }
-  &_black-border {
-    background: transparent;
-    border: 3px solid $black;
+  &_black-bordered {
     color: $black;
     &:hover, &:focus {
       color: $gold;
-      background: $black;
     }
   }
   &_black-bg {
     display: block;
-    background: $black;
     color: $gold;
     margin: 0 auto;
     padding: rem(14 0 13);
     &:hover, &:focus {
-      background: transparent;
-      border-color: $black;
       color: $black;
     }
   }
   &_white-bg {
-    background: #fff;
     color: $black;
-    &:hover, &:focus {
-      background: transparent;
-      border-color: #fff;
-    }
   }
   &_big {
     max-width: none;
     min-width: 0;
     padding: rem(27 0);
+  }
+  &_white-color {
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+}
+
+$button-colors: (
+  gold: $gold,
+  green: $green,
+  white: #fff,
+  black: $black
+);
+
+@each $name, $color in $button-colors {
+  .button_#{$name}-bg {
+    background: $color;
+    &:hover, &:focus {
+      background: transparent;
+      border-color: $color;
+    }
+  }
+  .button_#{$name}-bordered {
+    background: transparent;
+    border: 3px solid $color;
+    &:hover, &:focus {
+      background: $color;
+    }
   }
 }

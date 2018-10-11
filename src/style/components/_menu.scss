@@ -19,6 +19,7 @@
 .menu__block {
   max-width: 48.7%;
   min-width: 48.7%;
+  position: relative;
   @media (max-width: 540px) {
     max-width: none;
     min-width: 0;
@@ -26,6 +27,28 @@
     &:first-child {
       margin-bottom: rem(20);
     }
+  }
+  &_porto {
+    max-width: 31.6%;
+    min-width: 31.6%;
+    @media (max-width: 540px) {
+      max-width: none;
+      min-width: 0;
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: rem(86);
+    width: 35%;
+    background: linear-gradient(to left, $black 30%, transparent);
   }
 }
 
@@ -40,6 +63,14 @@
   color: #fff;
   letter-spacing: 0.63px;
   text-transform: uppercase;
+}
+
+.menu__text {
+  display: block;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu__img {
@@ -73,6 +104,11 @@
     height: rem(32);
     background: url('../img/zoom-icon.png') no-repeat center center;
     background-size: cover;
+  }
+  &_green-hover {
+    &:hover {
+      background-color: $green;
+    }
   }
 }
 

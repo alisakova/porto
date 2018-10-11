@@ -3,9 +3,19 @@
   position: relative;
   background: transparent;
   min-height: rem(571);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   &_manufactura {
     // background: url('../img/manufactura/first-slide-bg.png') no-repeat center center;
     // background-size: cover;
+  }
+  &_porto {
+    background-image: url('../img/porto/porto-bg.jpg');
+    padding: rem(180 0 140);
+    @media (max-width: 540px) {
+      padding-bottom: rem(220);
+    }
   }
 }
 
@@ -19,12 +29,34 @@
 
 .first-slide__title {
   margin-bottom: rem(43);
+  &_porto {
+    font-size: rem(39);
+    margin-bottom: rem(22);
+  }
+}
+
+.first-slide__subtitle {
+  font: {
+    size: rem(24);
+    weight: 700;
+  }
+  margin-bottom: rem(88);
+  color: #fff;
 }
 
 .first-slide__btn-container {
   .button {
     &:first-child {
       margin-right: rem(23);
+      @media (max-width: 540px) {
+        margin: {
+          right: 0;
+          bottom: rem(23);
+        }
+      }
+    }
+    @media (max-width: 540px) {
+      display: block;
     }
   }
 }

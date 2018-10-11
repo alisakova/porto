@@ -73,6 +73,9 @@ button {
   &_small {
     max-width: rem(749);
   }
+  &_porto_small {
+    max-width: rem(670);
+  }
 }
 
 .info-container {
@@ -80,6 +83,9 @@ button {
   background-size: cover;
   @media (max-width: 540px) {
     padding: rem(20 0);
+  }
+  &_porto {
+    background-image: url('../img/porto/methods-bg.jpg');
   }
 }
 
@@ -201,3 +207,7 @@ img {
 @import "components/mobile-menu";
 @import "components/burger";
 @import "components/parallax";
+@import "components/methods";
+@import "components/about-us";
+@import "components/team-slider";
+@import "components/statistics";

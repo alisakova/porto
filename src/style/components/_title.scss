@@ -1,14 +1,28 @@
 .title {
   position: relative;
+  height: 2.25rem;
   &:after {
     content: '';
     position: absolute;
-    top: rem(15);
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
     height: 3px;
     width: 100%;
     background: $black;
     z-index: 1;
+    @media (max-width: 768px) {
+      height: 2px;
+    }
+    @media (max-width: 540px) {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    height: 1.875rem;
+  }
+  @media (max-width: 540px) {
+    height: auto;
   }
 }
 
@@ -17,4 +31,7 @@
   padding: 0 rem(28);
   position: relative;
   z-index: 3;
+  @media (max-width: 540px) {
+    padding: 0;
+  }
 }

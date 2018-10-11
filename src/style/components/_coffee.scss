@@ -3,6 +3,16 @@
   background-size: cover;
   padding: rem(78) 0 rem(108);
   position: relative;
+  @media (max-width: 540px) {
+    font-size: 9px;
+    padding: rem(54 0 79);
+  }
+  @media (max-width: 475px) {
+    font-size: 8px;
+  }
+  &_porto {
+    background: $green;
+  }
 }
 
 .coffee__title {
@@ -13,16 +23,31 @@
   &_left {
     left: rem(-70);
     bottom: 0;
+    @media (max-width: 1280px) {
+      max-width: rem(250);
+    }
+    @media (max-width: 800px) {
+      left: rem(-80);
+    }
   }
   &_right {
     top: 0;
     right: 0;
+    @media (max-width: 1280px) {
+      max-width: rem(150);
+    }
+  }
+  @media (max-width: 660px) {
+    display: none;
   }
 }
 
 .coffee__list {
   border: 3px solid $black;
   margin-bottom: rem(58);
+  &_margin-bottom-0 {
+    margin-bottom: 0;
+  }
 }
 
 .coffee__item {
@@ -40,6 +65,9 @@
   max-width: rem(320);
   font: {
     weight: 700;
+  }
+  @media (max-width: 540px) {
+    max-width: 10rem;
   }
 }
 

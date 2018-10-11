@@ -1,3 +1,5 @@
+$link-colors: ();
+
 .footer {
   background: $black;
   color: $gray;
@@ -31,11 +33,19 @@
 .footer__link {
   border-bottom: 1px solid $gray;
   white-space: nowrap;
-  &_gold {
-    color: $gold;
-    border-bottom-color: $gold;
-  }
   &:hover, &:focus {
     border-bottom-color: transparent;
+  }
+}
+
+$link-colors: (
+  gold: $gold,
+  green: $green
+);
+
+@each $name, $color in $link-colors {
+  .footer__link_#{$name} {
+    color: $color;
+    border-bottom-color: $color;
   }
 }

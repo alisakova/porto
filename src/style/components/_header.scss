@@ -1,5 +1,8 @@
 .header {
   padding: rem(42 0 31);
+  &_porto {
+    padding: rem(27 0 27);
+  }
 }
 
 .header__container {

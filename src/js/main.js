@@ -1,9 +1,37 @@
 if ($('.news__slider').length) {
-  $('.news__slider').slick();
+  $('.news__slider').slick({
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+  });
 }
 
 if ($('.menu__slider').length) {
   $('.menu__slider').slick();
+}
+if ($('.team-slider').length) {
+  $('.team-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true
+  });
 }
 
 var accordion = document.querySelectorAll(".accordion");
