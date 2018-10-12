@@ -29,6 +29,15 @@
       top: calc(100% + 10px);
     }
   }
+  &_resto {
+    top: calc(100% - 55px);
+    @media (max-width: 768px) {
+      top: calc(100% - 30px);
+    }
+    @media (max-width: 540px) {
+      top: calc(100% + 10px);
+    }
+  }
 }
 
 .landing-nav__block {

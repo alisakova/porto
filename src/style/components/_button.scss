@@ -28,16 +28,51 @@ $button-colors: ();
   }
   &_white-bg {
     color: $black;
+    &_gray-color {
+      color: $dark-gray;
+    }
   }
   &_big {
     max-width: none;
     min-width: 0;
     padding: rem(27 0);
+    &_resto {
+      font-family: $resto-main-font;
+      border-radius: 6px;
+      letter-spacing: 0.38px;
+    }
   }
   &_white-color {
     &:hover, &:focus {
       color: #fff;
     }
+  }
+  &_dark-gray-bg {
+    &:hover, &:focus {
+      color: $dark-gray;
+    }
+  }
+  &_bright-green-bg {
+    &:hover, &:focus {
+      color: $bright-green;
+    }
+  }
+  &_white-bordered {
+    color: $dark-gray;
+  }
+}
+
+.button_resto {
+  border-radius: 6px;
+  font: {
+    family: $resto-main-font;
+    weight: 400;
+  }
+  padding: rem(14 22);
+  min-width: 0;
+  max-width: none;
+  &_weight-700 {
+    font-weight: 700;
   }
 }
 
@@ -45,7 +80,9 @@ $button-colors: (
   gold: $gold,
   green: $green,
   white: #fff,
-  black: $black
+  black: $black,
+  bright-green: $bright-green,
+  dark-gray: $dark-gray
 );
 
 @each $name, $color in $button-colors {

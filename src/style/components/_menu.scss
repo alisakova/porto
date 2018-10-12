@@ -1,6 +1,11 @@
+$menu-button-color-list: ();
+
 .menu {
   background: #fff;
   padding: rem(74) 0 rem(99);
+  &_resto {
+    padding: rem(70 0 99);
+  }
   @media (max-width: 540px) {
     padding: rem(54 0 79);
   }
@@ -14,6 +19,10 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+.menu__title_small-margin-bottom {
+  margin-bottom: rem(56);
 }
 
 .menu__block {
@@ -50,6 +59,11 @@
     width: 35%;
     background: linear-gradient(to left, $black 30%, transparent);
   }
+  &_resto {
+    &:after {
+      background: linear-gradient(to left, $dark-gray 30%, transparent);
+    }
+  }
 }
 
 .menu__name {
@@ -63,6 +77,13 @@
   color: #fff;
   letter-spacing: 0.63px;
   text-transform: uppercase;
+  &_dark-gray-bg {
+    background: $dark-gray;
+    font: {
+      family: $resto-main-font;
+      weight: 700;
+    }
+  }
 }
 
 .menu__text {
@@ -91,9 +112,6 @@
   border-radius: 50%;
   background-color: $black;
   transition: background-color 250ms;
-  &:hover {
-    background-color: $gold;
-  }
   &:after {
     content: '';
     top: 50%;
@@ -105,13 +123,25 @@
     background: url('../img/zoom-icon.png') no-repeat center center;
     background-size: cover;
   }
-  &_green-hover {
-    &:hover {
-      background-color: $green;
-    }
-  }
 }
 
 .menu__slide {
   border-bottom: 3px solid $black;
+  &_dark-gray {
+    border-bottom-color: $dark-gray;
+  }
+}
+
+$menu-button-color-list: (
+  gold: $gold,
+  green: $green,
+  bright-green: $bright-green
+);
+
+@each $name, $color in $menu-button-color-list {
+  .menu__button_#{$name}-hover {
+    &:hover {
+      background-color: $color;
+    }
+  }
 }

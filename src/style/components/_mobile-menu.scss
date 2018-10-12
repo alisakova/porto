@@ -17,6 +17,9 @@
     z-index: 1000;
     transition: all 0.5s;
   }
+  &_resto {
+    font-family: $resto-main-font;
+  }
 }
 
 .mobile-menu__close {

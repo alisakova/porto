@@ -30,10 +30,16 @@
     & + .panel {
       border: 3px solid $black;
       border-top: none;
+      &_dark-gray-border {
+        border-color: $dark-gray;
+      }
     }
   }
   @media (max-width: 540px) {
     padding: rem(20);
+  }
+  &_dark-gray-border {
+    border-color: $dark-gray;
   }
 }
 

@@ -1,11 +1,14 @@
 .reviews {
   background: #fff;
   padding: rem(87) 0 rem(92);
-  @media (max-width: 540px) {
-    padding: rem(54 0 79);
-  }
   &_porto {
     padding: rem(75 0 87);
+  }
+  &_resto {
+    padding: rem(96 0 97);
+  }
+  @media (max-width: 540px) {
+    padding: rem(54 0 79);
   }
 }
 
@@ -14,12 +17,20 @@
   &_porto {
     margin-bottom: rem(55);
   }
+  &_alt-font {
+    .title__content {
+      font: {
+        family: $resto-main-font;
+        weight: 700;
+      }
+    }
+  }
 }
 
 .reviews__container {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   @media (max-width: 540px) {
     flex-wrap: wrap;
   }
@@ -41,12 +52,21 @@
   }
 }
 
+.reviews__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .reviews__author-name {
   font: {
     size: rem(20);
     weight: 700;
   }
   margin-right: rem(15);
+  &_resto-font {
+    font-family: $resto-main-font;
+  }
 }
 
 .reviews__author-link {
@@ -64,10 +84,17 @@
     color: $green;
     border-bottom-color: $green;
   }
+  &_bright-green {
+    color: $bright-green;
+    border-bottom-color: $bright-green;
+  }
+  &_resto-font {
+    font-family: $resto-main-font;
+  }
 }
 
 .reviews__paragraph {
-  &:nth-last-child(2) {
+  &:last-child {
     margin-bottom: rem(22);
   }
 }

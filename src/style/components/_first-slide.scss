@@ -17,6 +17,13 @@
       padding-bottom: rem(220);
     }
   }
+  &_resto {
+    background-image: url('../img/resto/resto-bg.jpg');
+    padding: rem(157 0 135);
+    @media (max-width: 540px) {
+      padding-bottom: rem(230);
+    }
+  }
 }
 
 .first-slide__container {
@@ -33,6 +40,13 @@
     font-size: rem(39);
     margin-bottom: rem(22);
   }
+  &_resto {
+    font: {
+      family: $resto-main-font;
+      weight: 700;
+    }
+    margin-bottom: rem(18);
+  }
 }
 
 .first-slide__subtitle {
@@ -42,11 +56,21 @@
   }
   margin-bottom: rem(88);
   color: #fff;
+  text-align: center;
+  &_resto {
+    font: {
+      family: $resto-main-font;
+      size: rem(30);
+      weight: 400;
+    }
+    text-transform: uppercase;
+    margin-bottom: rem(92);
+  }
 }
 
 .first-slide__btn-container {
   .button {
-    &:first-child {
+    &:not(:last-child) {
       margin-right: rem(23);
       @media (max-width: 540px) {
         margin: {

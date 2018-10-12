@@ -40,7 +40,8 @@ $link-colors: ();
 
 $link-colors: (
   gold: $gold,
-  green: $green
+  green: $green,
+  alt-green: #76a81b
 );
 
 @each $name, $color in $link-colors {

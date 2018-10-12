@@ -3,12 +3,20 @@
   @media (max-width: 540px) {
     padding: rem(54 0 100);
   }
+  &_resto {
+    background: url('../img/resto/about-us-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: rem(64 0);
+  }
 }
 
 .about-us__title {
   margin-bottom: rem(70);
   @media (max-width: 540px) {
     margin-bottom: rem(38);
+  }
+  &_small-margin-bottom {
+    margin-bottom: rem(42);
   }
 }
 
@@ -19,6 +27,12 @@
   margin-bottom: rem(81);
   @media (max-width: 540px) {
     flex-direction: column-reverse;
+  }
+  &_resto {
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    margin-bottom: 0;
+    padding: rem(55 70 59);
   }
 }
 
@@ -39,5 +53,12 @@
   }
   @media (max-width: 540px) {
     margin-top: 0;
+  }
+  &_resto {
+    p {
+      &:not(:last-child) {
+        margin-bottom: rem(18);
+      }
+    }
   }
 }

@@ -4,9 +4,34 @@
 
 @font-face {
   font-family: "KelsonSansBold";
-  src: url("../fonts/KelsonSansBold.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  src: url('../fonts/KelsonSans/KelsonSans-BoldRu.ttf'),
+		   url('../fonts/KelsonSans/KelsonSans-BoldRu.eot'),
+		   url('../fonts/KelsonSans/KelsonSans-BoldRu.woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Lineatura';
+	src: url('../fonts/Lineatura/Lineatura.ttf'),
+		   url('../fonts/Lineatura/Lineaturar.eot'),
+		   url('../fonts/Lineatura/Lineatura.woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria/Geometria.ttf'),
+		   url('../fonts/Geometria/Geometria.eot'),
+		   url('../fonts/Geometria/Geometria.woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria/Geometria-Bold.ttf'),
+		   url('../fonts/Geometria/Geometria-Bold.eot'),
+		   url('../fonts/Geometria/Geometria-Bold.woff');
+	font-weight: 700;
 }
 
 html {
@@ -76,6 +101,9 @@ button {
   &_porto_small {
     max-width: rem(670);
   }
+  &_resto_small {
+    max-width: rem(1010);
+  }
 }
 
 .info-container {
@@ -86,6 +114,10 @@ button {
   }
   &_porto {
     background-image: url('../img/porto/methods-bg.jpg');
+  }
+  &_resto {
+    background-image: none;
+    background-color: $light-gray;
   }
 }
 
@@ -151,6 +183,26 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.resto {
+  color: $dark-gray;
+  h2 {
+    font: {
+      family: $resto-head-font;
+    }
+    letter-spacing: 0.9px;
+  }
+  p {
+    font: {
+      family: $resto-main-font;
+      weight: 400;
+    }
+  }
+  .info__title {
+    letter-spacing: 0;
+  }
+}
+
 
 // @media (min-width: 1600px) {
 //   html {

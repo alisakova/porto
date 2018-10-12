@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+  <title>Resto-Presto</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+<body class="resto">
+	@import "resto/header.html"
+	@import "resto/mobile-menu.html"
+	<main class="wrapper">
+		@import "resto/first-slide.html"
+		@import "resto/menu.html"
+		@import "resto/about-us.html"
+		<div class="info-container info-container_resto">
+			@import "resto/place.html"
+			@import "resto/about.html"
+		</div>
+		@import "resto/reviews.html"
+		<div class="info-container info-container_resto">
+			@import "resto/about-food.html"
+			@import "resto/about-drinks.html"
+			@import "resto/about-price.html"
+		</div>
+		@import "resto/news.html"
+		<div class="info-container info-container_resto">
+			@import "resto/about-children.html"
+			@import "resto/about-events.html"
+			@import "resto/about-guests.html"
+		</div>
+		@import "resto/jobs.html"
+		@import "resto/contacts.html"
+	</main>
+	@import "resto/footer.html"
+	<script src="js/main.min.js"></script>
+  <script>
+	pixelperfect.init( {
+    image: "img/web.png",
+    opacity: .4
+} );
+  </script>
+</body>
+</html>

@@ -4,6 +4,11 @@
   &_porto {
     background-image: url('../img/porto/news-bg.jpg');
   }
+  &_resto {
+    background-image: none;
+    background-color: $bright-green-2;
+    font-family: $resto-main-font;
+  }
 }
 
 .contacts__container {
@@ -39,6 +44,9 @@
   flex: 0 1 48.77%;
   font-size: rem(18);
   margin-bottom: rem(14);
+  &_font-size-16 {
+    font-size: rem(16);
+  }
 }
 
 .contacts__block {

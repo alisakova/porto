@@ -9,6 +9,10 @@
     background-image: url('../img/porto/news-bg.jpg');
     padding-bottom: rem(170);
   }
+  &_resto {
+    background-image: none;
+    background-color: $bright-green-2;
+  }
 }
 
 .news__slider {

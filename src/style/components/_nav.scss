@@ -21,6 +21,20 @@ $nav-link-colors: ();
       }
     }
   }
+  &_resto {
+    font-family: $resto-main-font;
+    .nav__link {
+      &:not(:last-child) {
+        margin-right: rem(55);
+        @media (max-width: 1280px) {
+          margin-right: rem(38);
+        }
+        @media (max-width: 920px) {
+          margin-right: rem(28);
+        }
+      }
+    }
+  }
 }
 
 .nav__link {
@@ -46,7 +60,8 @@ $nav-link-colors: ();
 
 $nav-link-colors: (
   gold: $gold,
-  green: $green
+  green: $green,
+  bright-green: $bright-green
 );
 
 @each $name, $color in $nav-link-colors {
