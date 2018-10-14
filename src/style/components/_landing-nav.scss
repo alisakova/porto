@@ -22,17 +22,23 @@
   // }
   &_porto {
     top: calc(100% - 55px);
-    @media (max-width: 900px) {
+    @media (max-width: 1080px) {
       top: calc(100% - 70px);
     }
+    @media (max-width: 750px) {
+      top: calc(100% - 50px);
+    }
     @media (max-width: 540px) {
-      top: calc(100% + 10px);
+      top: 100%;
     }
   }
   &_resto {
     top: calc(100% - 55px);
-    @media (max-width: 768px) {
-      top: calc(100% - 30px);
+    @media (max-width: 1080px) {
+      top: calc(100% - 70px);
+    }
+    @media (max-width: 750px) {
+      top: calc(100% - 50px);
     }
     @media (max-width: 540px) {
       top: calc(100% + 10px);

@@ -48,8 +48,16 @@ for (var i = 0; i < accordion.length; i++) {
   });
 }
 
-$(".parallax-window").parallax({
-  imageSrc: "img/manufactura/first-slide-bg.png"
+$("._parallax-window").parallax({
+  imageSrc: "/img/manufactura/first-slide-bg.png"
+});
+
+$("._parallax-window-resto").parallax({
+  imageSrc: "/img/resto/resto-bg.jpg"
+});
+
+$("._parallax-window-porto").parallax({
+  imageSrc: "/img/porto/porto-bg.jpg"
 });
 
 //для плавного скролла к якорям
