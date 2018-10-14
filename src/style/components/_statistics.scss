@@ -1,14 +1,38 @@
 .statistics {
   padding: rem(118 100 50 144);
-  &_text-align-right {
-    text-align: right;
-    padding: rem(65 135 110 160);
-  }
   &_margin-top {
     margin-top: rem(100);
+    @media (max-width: 540px) {
+      margin-top: 0;
+    }
   }
   &_margin-bottom {
     margin-bottom: rem(110);
+    @media (max-width: 540px) {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: rem(80 80 80 135);
+  }
+  @media (max-width: 540px) {
+    padding: {
+      top: rem(40);
+      bottom: rem(40);
+    }
+  }
+  &_text-align-right {
+    text-align: right;
+    padding: rem(65 135 110 70);
+    @media (max-width: 768px) {
+      padding: rem(80 135 80 80);
+    }
+    @media (max-width: 540px) {
+      padding: {
+        top: rem(40);
+        bottom: rem(40);
+      }
+    }
   }
 }
 

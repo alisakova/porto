@@ -33,6 +33,12 @@
     display: block;
     margin-bottom: 0;
     padding: rem(55 70 59);
+    @media (max-width: 540px) {
+      padding: {
+        left: rem(40);
+        right: rem(40);
+      }
+    }
   }
 }
 
