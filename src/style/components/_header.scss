@@ -1,5 +1,9 @@
 .header {
   padding: rem(42 0 31);
+  position: fixed;
+  background: #fff;
+  z-index: 1000;
+  width: 100%;
   &_porto {
     padding: rem(27 0 27);
   }

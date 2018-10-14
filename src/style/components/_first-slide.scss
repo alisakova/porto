@@ -1,25 +1,21 @@
 .first-slide {
-  padding: rem(187 0 227);
+  padding: rem(300 0 227);
   position: relative;
   background: transparent;
   min-height: rem(571);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  &_manufactura {
-    // background: url('../img/manufactura/first-slide-bg.png') no-repeat center center;
-    // background-size: cover;
-  }
   &_porto {
     background-image: url('../img/porto/porto-bg.jpg');
-    padding: rem(180 0 140);
+    padding: rem(292 0 140);
     @media (max-width: 540px) {
       padding-bottom: rem(220);
     }
   }
   &_resto {
     background-image: url('../img/resto/resto-bg.jpg');
-    padding: rem(157 0 135);
+    padding: rem(272 0 140);
     @media (max-width: 540px) {
       padding-bottom: rem(230);
     }

@@ -1,5 +1,6 @@
 @import "variables";
 @import "util";
+@import "pixel-perfect.css";
 
 @font-face {
   font-family: "KelsonSansBold";
@@ -53,6 +54,7 @@ body {
   background: none;
   color: $black;
   -webkit-text-size-adjust: none;
+  position: relative;
   // background: $main-gray;
 }
 
