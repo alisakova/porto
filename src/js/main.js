@@ -1,7 +1,7 @@
 if ($(".news__slider").length) {
   $(".news__slider").slick({
     infinite: true,
-    autoplay: true,
+    // autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
@@ -9,7 +9,8 @@ if ($(".news__slider").length) {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 2,
+          slidesToScroll: 1
         }
       },
       {

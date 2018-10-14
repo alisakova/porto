@@ -80,6 +80,15 @@
     }
     @media (max-width: 540px) {
       display: block;
+      max-width: none;
+      min-width: 0;
+      padding: rem(16);
+      width: 100%;
+      &_resto {
+        padding: {
+          bottom: rem(12);
+        }
+      }
     }
   }
 }
