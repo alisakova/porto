@@ -68,19 +68,19 @@ for (var i = 0; i < accordion.length; i++) {
 
 if ($("._parallax-window").length) {
   $("._parallax-window").parallax({
-    imageSrc: "/img/manufactura/first-slide-bg.png"
+    imageSrc: "img/manufactura/first-slide-bg.png"
   });
 }
 
 if ($("._parallax-window-resto").length) {
   $("._parallax-window-resto").parallax({
-    imageSrc: "/img/resto/resto-bg.jpg"
+    imageSrc: "img/resto/resto-bg.jpg"
   });
 }
 
 if ($("._parallax-window-porto").length) {
   $("._parallax-window-porto").parallax({
-    imageSrc: "/img/porto/porto-bg.jpg"
+    imageSrc: "img/porto/porto-bg.jpg"
   });
 }
 
