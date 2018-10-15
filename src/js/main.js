@@ -5,18 +5,21 @@ if ($(".news__slider").length) {
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
+    centerMode: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 700,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          variableWidth: false
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 500,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          variableWidth: false
         }
       }
     ]
