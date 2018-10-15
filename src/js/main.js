@@ -31,7 +31,21 @@ if ($(".team-slider").length) {
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
-    autoplay: true
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 475,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 }
 
@@ -49,17 +63,23 @@ for (var i = 0; i < accordion.length; i++) {
   });
 }
 
-$("._parallax-window").parallax({
-  imageSrc: "/img/manufactura/first-slide-bg.png"
-});
+if ($("._parallax-window").length) {
+  $("._parallax-window").parallax({
+    imageSrc: "/img/manufactura/first-slide-bg.png"
+  });
+}
 
-$("._parallax-window-resto").parallax({
-  imageSrc: "/img/resto/resto-bg.jpg"
-});
+if ($("._parallax-window-resto").length) {
+  $("._parallax-window-resto").parallax({
+    imageSrc: "/img/resto/resto-bg.jpg"
+  });
+}
 
-$("._parallax-window-porto").parallax({
-  imageSrc: "/img/porto/porto-bg.jpg"
-});
+if ($("._parallax-window-porto").length) {
+  $("._parallax-window-porto").parallax({
+    imageSrc: "/img/porto/porto-bg.jpg"
+  });
+}
 
 //для плавного скролла к якорям
 $(document).ready(function() {
