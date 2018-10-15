@@ -1,0 +1,19 @@
+.main-page {
+  min-height: calc(100vh - 5.5625rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media (max-width: 650px) {
+    padding-top: rem(56);
+  }
+}
+
+.main-page__logo {
+  max-width: rem(481);
+  margin: 0 auto rem(56);
+}
+
+.main-page__content {
+  width: 100%;
+}

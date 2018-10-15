@@ -1,0 +1,59 @@
+.restaurants {
+  
+}
+
+.restaurants__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.restaurants__logo {
+  &_margin-bottom {
+    margin-bottom: rem(34);
+  }
+}
+
+.restaurants__item {
+  flex-basis: 31.74%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: rem(396);
+  padding: rem(53);
+  cursor: pointer;
+  &_resto {
+    background-image: url('../img/index/resto-bg.jpg');
+    padding: rem(56 79 53);
+  }
+  &_porto {
+    background-image: url('../img/index/porto-coffee-bg.jpg');
+  }
+  &_manufactura {
+    background-image: url('../img/index/manufactura-bg.jpg');
+  }
+  @media (max-width: 650px) {
+    max-height: rem(500);
+    &:not(:last-child) {
+      margin-bottom: rem(35);
+    }
+  }
+}
+
+.restaurants__btn-container {
+  display: flex;
+  flex-direction: column;
+  .button {
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+}

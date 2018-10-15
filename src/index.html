@@ -5,40 +5,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-  <title>Porto O Manufactura</title>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <title>Resto Group</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic" rel="stylesheet">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
 
 <body>
-	@import "manufactura/header.html"
-	@import "menu.html"
-	<main class="wrapper">
-		@import "manufactura/first-slide.html"
-		@import "manufactura/menu.html"
-		@import "manufactura/coffee.html"
-		<div class="info-container">
-			@import "manufactura/place.html"
-			@import "manufactura/about-coffee.html"
+	<main class="wrapper main-page">
+		<div class="main-page__content container">
+			<div class="main-page__logo">
+				<img src="img/index/logo.png" alt="Логотип">
+			</div>
+			@import "index/restaurants.html"
 		</div>
-		@import "manufactura/reviews.html"
-		<div class="info-container">
-			@import "manufactura/about-food.html"
-			@import "manufactura/price.html"
-			@import "manufactura/team.html"
-		</div>
-		@import "manufactura/news.html"
-		@import "manufactura/jobs.html"
-		@import "manufactura/contacts.html"
 	</main>
-	@import "footer.html"
+	@import "index/footer.html"
 	<script src="js/main.min.js"></script>
-
 </body>
 </html>
