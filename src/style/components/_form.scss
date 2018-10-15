@@ -1,0 +1,59 @@
+input[type='number'] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.form {
+  .button {
+    margin: 0;
+  }
+}
+
+.form__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: rem(38);
+}
+
+.form__col {
+  flex: 0 0 47%;
+}
+
+.form__input {
+  background: #fff;
+  border: 3px solid $input-border-color;
+  border-radius: 0;
+  -webkit-appearance: none;
+  padding: rem(14);
+  font-size: rem(16);
+  color: $black;
+  width: 100%;
+  height: rem(45);
+  @include input-placeholder {
+    color: $black;
+    transition: color 250ms;
+  }
+  &:focus {
+    @include input-placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.form__label {
+  display: block;
+  margin-bottom: rem(8);
+  letter-spacing: 0.4px;
+}
+
+.form__item {
+  &:not(:last-child) {
+    margin-bottom: rem(25);
+  }
+}

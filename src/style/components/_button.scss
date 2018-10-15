@@ -60,6 +60,12 @@ $button-colors: ();
   &_white-bordered {
     color: $dark-gray;
   }
+  &_white-to-black-color {
+    color: #fff;
+    &:hover, &:focus {
+      color: $black;
+    }
+  }
 }
 
 .button_resto {

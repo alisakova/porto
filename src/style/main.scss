@@ -1,5 +1,6 @@
 @import "variables";
 @import "util";
+@import "mixins";
 
 @font-face {
   font-family: "KelsonSansBold";
@@ -265,3 +266,7 @@ img {
 @import "components/statistics";
 @import "components/main-page";
 @import "components/restaurants";
+@import "components/modal";
+@import "components/form";
+@import "components/checkbox";
+@import "components/select";

@@ -52,6 +52,12 @@ if ($(".team-slider").length) {
   });
 }
 
+$('._open-modal').click(function(event) {
+  event.preventDefault();
+  $('#order-table').modal();
+  return false;
+});
+
 var accordion = document.querySelectorAll(".accordion");
 
 for (var i = 0; i < accordion.length; i++) {
