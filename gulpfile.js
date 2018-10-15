@@ -114,13 +114,7 @@ gulp.task("image:build", function() {
   gulp
     .src(path.src.img)
     .pipe(
-      imagemin({
-        progressive: true,
-        optimizationLevel: 5,
-        svgoPlugins: [{ removeViewBox: false }],
-        use: [pngquant()],
-        interlaced: true
-      })
+      imagemin()
     )
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({ stream: true }));
@@ -137,7 +131,7 @@ gulp.task("watch", function() {
   watch([path.watch.js], function(event, cb) {
     gulp.start("js:build");
   });
-  watch(["src/img/*.*", "src/img/**/*.*"], function(event, cb) {
+  watch([path.watch.img], function(event, cb) {
     gulp.start("image:build");
   });
 });

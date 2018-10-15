@@ -1,5 +1,5 @@
 .contacts {
-  background: url('../img/manufactura/coffee-bg.jpg') no-repeat center center;
+  background: url('../img/manufactura/gold-bg.jpg') no-repeat center center;
   background-size: cover;
   &_porto {
     background-image: url('../img/porto/news-bg.jpg');
@@ -8,6 +8,9 @@
     background-image: none;
     background-color: $bright-green-2;
     font-family: $resto-main-font;
+  }
+  @media (max-width: 992px) {
+    padding-top: rem(30);
   }
 }
 

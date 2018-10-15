@@ -1,5 +1,5 @@
 .restaurants {
-  
+
 }
 
 .restaurants__list {
@@ -54,6 +54,13 @@
     margin: 0 auto;
     &:not(:last-child) {
       margin-bottom: rem(16);
+    }
+    @media (max-width: 540p x) {
+      display: block;
+      max-width: none;
+      min-width: 0;
+      padding: rem(16);
+      width: 100%;
     }
   }
 }
