@@ -12,6 +12,10 @@
   a.close-modal {
     display: none;
   }
+  @media (max-width: 475px) {
+    width: 100%;
+    padding: rem(49 35 35);
+  }
 }
 
 .modal__title {
