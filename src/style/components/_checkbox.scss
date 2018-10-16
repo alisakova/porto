@@ -36,10 +36,17 @@ $checkbox-border: #808495;
   position: absolute;
   top: 0;
   left: 0;
-  height: 17px;
-  width: 17px;
+  height: rem(17);
+  width: rem(17);
   background-color: #fff;
   border: 3px solid $input-border-color;
+  @media (max-width: 1080px) {
+    border-width: 2px;
+  }
+  @media (max-width: 768px) {
+    width: 12px;
+    height: 12px;
+  }
   &:after {
     content: '';
     position: absolute;
@@ -51,5 +58,12 @@ $checkbox-border: #808495;
     border: solid $gray;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+    @media (max-width: 1080px) {
+      width: 2px;
+      height: 4px;
+    }
+    @media (max-width: 768px) {
+      left: 2px;
+    }
   }
 }

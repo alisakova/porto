@@ -1,7 +1,7 @@
-<div id="order-table" class="modal">
+<div id="order-table-porto" class="modal">
   <a href="#" rel="modal:close" class="modal-close">
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path opacity="0.2988" d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#171717" />
+    <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="1" d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#171717" />
     </svg>
   </a>
   <h2 class="modal__title">
@@ -22,7 +22,7 @@
         <div class="form__item">
           <label class="form__label">Повод</label>
           <div class="select-container select-container_green-arrow">
-            <select class="form__select select" name="state">
+            <select class="form__select select" name="occasion-porto">
               <option value="occasion" selected>
                 Праздник
               </option>
@@ -32,8 +32,8 @@
               <option value="occasion-2">
                 Торжество
               </option>
-              <option value="occasion-3">
-                Другое (укажите в комментарии)
+              <option value="occasion-3" class="small">
+                Другое <span class="small">(укажите в комментарии)</span>
               </option>
             </select>
           </div>
@@ -50,7 +50,7 @@
         </div>
         <div class="form__item">
           <label for="comment" class="form__label">Комментарий</label>
-          <input id="comment" type="number" class="form__input">
+          <input id="comment" type="text" class="form__input">
         </div>
       </div>
     </div>
@@ -61,6 +61,6 @@
         <span class="checkbox__checkmark"></span>
       </label>
     </div>
-    <button class="button button_black-bg button_white-to-black-color">Забронировать столик</button>
+    <button type="submit" class="button button_black-bg button_white-to-black-color">Забронировать столик</button>
   </form>
 </div>

@@ -19,10 +19,20 @@ input[type='number'] {
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: rem(38);
+  @media (max-width: 475px) {
+    flex-direction: column;
+  }
 }
 
 .form__col {
   flex: 0 0 47%;
+  @media (max-width: 475px) {
+    flex-basis: 100%;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
+  }
 }
 
 .form__input {
@@ -30,11 +40,14 @@ input[type='number'] {
   border: 3px solid $input-border-color;
   border-radius: 0;
   -webkit-appearance: none;
-  padding: rem(14);
+  padding: rem(5 14);
   font-size: rem(16);
   color: $black;
   width: 100%;
   height: rem(45);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   @include input-placeholder {
     color: $black;
     transition: color 250ms;
