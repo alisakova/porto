@@ -4,6 +4,9 @@ $link-colors: ();
   background: $black;
   color: $gray;
   padding: rem(34 0 35);
+  &_white-bg {
+    background: #fff;
+  }
 }
 
 .footer__container {
@@ -41,7 +44,8 @@ $link-colors: ();
 $link-colors: (
   gold: $gold,
   green: $green,
-  alt-green: #76a81b
+  alt-green: #76a81b,
+  bright-green: $bright-green-2
 );
 
 @each $name, $color in $link-colors {

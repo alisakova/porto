@@ -1,5 +1,5 @@
 .news {
-  background: url('../img/manufactura/coffee-bg.png') no-repeat center center;
+  background: url('../img/manufactura/gold-bg.jpg') no-repeat center center;
   background-size: cover;
   padding: rem(74) 0 rem(148);
   @media (max-width: 540px) {
@@ -18,19 +18,24 @@
 .news__slider {
   .slick-track {
     display: flex;
+    margin: 0 rem(-15);
+    @media (max-width: 500px) {
+      margin: 0;
+    }
+  }
+  .slick-slide {
+    padding: 0 rem(15);
+    height: auto;
+    @media (max-width: 500px) {
+      padding: 0;
+    }
   }
 }
 
-.slick-initialized {
-  .news__block {
-    &.slick-slide {
-      margin-right: rem(30);
-      display: flex;
-      height: auto;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
+.news__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .news__main-title {
@@ -44,37 +49,22 @@
   max-width: rem(570);
   position: relative;
   z-index: 3;
-  &:not(:last-child) {
-    @media (max-width: 700px) {
-      margin-right: 0;
-    }
+  height: 100%;
+  @media (max-width: 600px) {
+    padding-right: rem(60);
   }
-  // @media (max-width: 700px) {
-  //   flex: 0 0 32%;
-  //   padding-right: rem(20);
-  // }
-  // @media (max-width: 540px) {
-  //   flex-basis: 100%;
-  //   max-width: none;
-  //   margin-bottom: rem(30);
-  // }
   &_small {
     background: none;
     justify-content: flex-start;
     background-color: #fff;
     padding: 0;
     max-width: rem(270);
-    // @media (max-width: 700px) {
-    //   flex: 0 0 32%;
-    //   max-width: none;
-    // }
-    // @media (max-width: 540px) {
-    //   flex-basis: 48%;
-    // }
-    // @media (max-width: 375px) {
-    //   flex-basis: 100%;
-    //   max-width: none;
-    // }
+    @media (max-width: 700px) {
+      max-width: none;
+    }
+  }
+  @media (max-width: 500px) {
+    max-width: none;
   }
   &_with-gradient {
     &:after {
@@ -148,14 +138,14 @@
   max-height: rem(183);
   margin-bottom: rem(26);
   overflow: hidden;
+  img {
+    width: 100%;
+  }
   @media (max-width: 700px) {
     max-height: rem(300);
   }
   @media (max-width: 540px) {
     max-height: rem(500);
-    img {
-      width: 100%;
-    }
   }
 }
 

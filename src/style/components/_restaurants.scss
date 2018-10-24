@@ -1,0 +1,90 @@
+.restaurants {
+
+}
+
+.restaurants__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.restaurants__logo {
+  transition: all 250ms;
+  margin-bottom: rem(34);
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+  }
+}
+
+.restaurants__item {
+  flex-basis: 31.74%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: rem(396);
+  padding: rem(53);
+  position: relative;
+  cursor: pointer;
+  &_resto {
+    background-image: url('../img/index/resto-bg.jpg');
+  }
+  &_porto {
+    background-image: url('../img/index/porto-coffee-bg.jpg');
+  }
+  &_manufactura {
+    background-image: url('../img/index/manufactura-bg.jpg');
+  }
+  @media (max-width: 650px) {
+    &:not(:last-child) {
+      margin-bottom: rem(35);
+    }
+  }
+  @media (min-width: 768px) {
+    padding: rem(10 10 53 10);
+    &:hover {
+      .restaurants__logo {
+        top: 20px;
+        transform: translateY(0) translateX(-50%);
+      }
+      .restaurants__btn-container {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.restaurants__btn-container {
+  display: flex;
+  flex-direction: column;
+  transition: all 250ms;
+  @media (max-width: 540px) {
+    width: 70%;
+  }
+  @media (min-width: 768px) {
+    opacity: 0;
+  }
+  .button {
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+    @media (max-width: 540px) {
+      display: block;
+      max-width: none;
+      min-width: 0;
+      padding: rem(16);
+      width: 100%;
+    }
+  }
+}

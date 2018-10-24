@@ -19,19 +19,22 @@
   &:after {
     content: '';
     position: absolute;
-    right: -14px;
+    right: rem(-14);
     top: 7px;
     height: calc(100% - 16px);
     width: 3px;
     opacity: 0.43;
     background: $black;
     border-radius: 2px;
+    @media (max-width: 540px) {
+      display: none;
+    }
   }
 }
 
 .slick-next {
   font-size: 0;
-  right: 47%;
+  left: 51%;
   &:before {
     content: '';
     background: url('../img/right-arrow.svg') no-repeat center center;
@@ -47,6 +50,33 @@
   position: absolute;
   cursor: pointer;
   z-index: 10;
+}
+
+.news__slider,
+.team-slider {
+  .slick-prev {
+    @media (max-width: 540px) {
+      left: 45%;
+    }
+    &:after {
+      @media (max-width: 1180px) {
+        right: rem(-11);
+      }
+      @media (max-width: 1180px) {
+        right: rem(-14);
+        top: 5px;
+        height: calc(100% - 10px);
+      }
+      @media (max-width: 830px) {
+        right: -8px;
+      }
+    }
+  }
+  .slick-next {
+    @media (max-width: 540px) {
+      left: 50%;
+    }
+  }
 }
 
 .menu__slider {
@@ -85,6 +115,7 @@
   }
   .slick-next {
     right: rem(20);
+    left: auto;
     &:before {
       background: url('../img/white-right-arrow.svg') no-repeat center center;
       background-size: cover;
@@ -96,5 +127,8 @@
   .slick-arrow {
     bottom: auto;
     top: calc(100% + 60px);
+    @media (max-width: 540px) {
+      top: calc(100% + 20px);
+    }
   }
 }

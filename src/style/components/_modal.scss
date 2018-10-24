@@ -1,0 +1,33 @@
+.jquery-modal {
+  &.blocker {
+    z-index: 1000;
+  }
+}
+
+.modal {
+  padding: rem(59 45 45);
+  max-width: rem(572);
+  border-radius: 0;
+  z-index: 1000;
+  a.close-modal {
+    display: none;
+  }
+  @media (max-width: 475px) {
+    width: 100%;
+    padding: rem(49 35 35);
+  }
+}
+
+.modal__title {
+  text-align: left;
+  margin-bottom: rem(31);
+  .smaller {
+    font-size: rem(24);
+  }
+}
+
+.modal-close {
+  top: rem(26);
+  right: rem(26);
+  position: absolute;
+}

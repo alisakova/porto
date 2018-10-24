@@ -1,11 +1,12 @@
 @import "variables";
 @import "util";
+@import "mixins";
 
 @font-face {
   font-family: "KelsonSansBold";
-  src: url('../fonts/KelsonSans/KelsonSans-BoldRu.ttf'),
-		   url('../fonts/KelsonSans/KelsonSans-BoldRu.eot'),
-		   url('../fonts/KelsonSans/KelsonSans-BoldRu.woff');
+  src: url('../fonts/KelsonSans/KelsonSans-BoldRU.ttf'),
+		   url('../fonts/KelsonSans/KelsonSans-BoldRU.eot'),
+		   url('../fonts/KelsonSans/KelsonSans-BoldRU.woff');
 	font-weight: normal;
 }
 
@@ -263,3 +264,9 @@ img {
 @import "components/about-us";
 @import "components/team-slider";
 @import "components/statistics";
+@import "components/main-page";
+@import "components/restaurants";
+@import "components/modal";
+@import "components/form";
+@import "components/checkbox";
+@import "components/select";

@@ -48,13 +48,12 @@
   min-height: rem(96);
   max-height: rem(96);
   max-width: rem(80);
-  overflow: hidden;
   margin: 0 auto rem(20);
   display: flex;
   align-items: center;
   justify-content: center;
   img {
-    object-fit: cover;
-    height: 100%;
+    object-fit: contain;
+    height: rem(96);
   }
 }

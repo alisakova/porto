@@ -51,7 +51,7 @@ var config = {
   tunnel: true,
   host: "localhost",
   port: 9000,
-  logPrefix: "PointsBit",
+  logPrefix: "Porto",
   fallback: "build/index.html"
 };
 
@@ -89,7 +89,7 @@ gulp.task("fonts", function() {
 gulp.task("js:build", function() {
   gulp
     .src(path.src.js)
-    // .pipe(uglify())
+    .pipe(uglify())
     .on("error", log)
     .pipe(concat("main.min.js"))
     .pipe(gulp.dest(path.build.js))
@@ -113,15 +113,9 @@ gulp.task("style:build", function() {
 gulp.task("image:build", function() {
   gulp
     .src(path.src.img)
-    .pipe(
-      imagemin({
-        progressive: true,
-        optimizationLevel: 5,
-        svgoPlugins: [{ removeViewBox: false }],
-        use: [pngquant()],
-        interlaced: true
-      })
-    )
+    // .pipe(
+    //   imagemin()
+    // )
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({ stream: true }));
 });

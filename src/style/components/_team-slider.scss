@@ -4,10 +4,14 @@
 
 .team-slider__slide {
   text-align: center;
+  padding: 0 rem(15);
 }
 
 .team-slider__img {
   margin-bottom: rem(29);
+  img {
+    width: 100%;
+  }
 }
 
 .team-slider__name {
