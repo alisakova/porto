@@ -17,6 +17,9 @@ $button-colors: ();
       color: $gold;
     }
   }
+  &_small {
+    min-width: rem(179);
+  }
   &_black-bg {
     display: block;
     color: $gold;

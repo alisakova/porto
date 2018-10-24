@@ -40,7 +40,8 @@ input[type='number'] {
   }
 }
 
-.form__input {
+.form__input,
+.form__textarea {
   background: #fff;
   border: 3px solid $input-border-color;
   border-radius: 0;
@@ -62,6 +63,11 @@ input[type='number'] {
       color: transparent;
     }
   }
+}
+
+.form__textarea {
+  resize: none;
+  min-height: rem(114);
 }
 
 .form__label {
