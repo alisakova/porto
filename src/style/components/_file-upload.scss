@@ -6,3 +6,22 @@
     opacity: 0;
   }
 }
+
+.file-upload__empty {
+  margin-bottom: rem(8);
+}
+
+.file-upload__button {
+  background: $input-border-color;
+  height: rem(45);
+  padding: rem(12 38 17 18);
+  position: relative;
+  display: block;
+  &:after {
+    content: '+';
+    position: absolute;
+    right: rem(15);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

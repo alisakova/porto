@@ -20,6 +20,9 @@ $button-colors: ();
   &_small {
     min-width: rem(179);
   }
+  &_extra-small {
+    min-width: rem(126);
+  }
   &_black-bg {
     display: block;
     color: $gold;

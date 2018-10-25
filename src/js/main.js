@@ -16,8 +16,6 @@ $("._open-modal-manufactura").click(function(event) {
   return false;
 });
 
-$("#review").modal();
-
 if ($(".select").length) {
   $(".select").select2({
     minimumResultsForSearch: Infinity,
