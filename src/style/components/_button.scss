@@ -60,7 +60,7 @@ $button-colors: ();
   }
   &_bright-green-bg {
     &:hover, &:focus {
-      color: #fff;
+      color: $bright-green;
     }
   }
   &_white-bordered {
